@@ -1,6 +1,5 @@
-import React from 'react'
-import styles from './styles.module.css'
-
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+const RFor = ({ data, renderItem }) => {
+  return data.map((item) => renderItem(item))
 }
+
+export default RFor
