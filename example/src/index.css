@@ -12,3 +12,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.BoxStyle {
+  border: 1px solid black;
+  padding: 16px;
+  margin: 20px;
+  display: flex;
+  flex: 1;
+}
+
+.AppWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
