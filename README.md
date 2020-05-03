@@ -13,16 +13,26 @@ npm install --save react-render-for
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+import RFor from 'react-render-for'
 
-import MyComponent from 'react-render-for'
-import 'react-render-for/dist/index.css'
+const data = ['Elemento 1', 'Elemento 2', 'Elemento 3'] // ...
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const Box = ({ item }) => (
+  <div className='BoxStyle'>
+    <h6>{item}</h6>
+  </div>
+)
+
+const App = () => {
+  return (
+    <div className='AppWrapper'>
+      <RFor data={data} renderItem={(item) => <Box item={item} />} />
+    </div>
+  )
 }
+
+export default App
 ```
 
 ## License
